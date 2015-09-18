@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Your plan program</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section id="wrapper">
+	<ul id="list" onclick="console.log('click2')">
+		<li id="workItem" class="clearDefault common">
+			任务商店
+			<span id="workAdd" class="add-icon">+</span>
+			<div id="workDiv" class="dis-none" onclick="DOMhelp.cancelClick(event);">
+				<input id="work-item-name" type="text" placeholder="请输入任务名称">
+				<span id="work-checkName-span"></span><br>
+				<input id="work-item-rank" type="text" placeholder="请输入获得星值">
+				<span id="work-checkRank-span"></span><br>
+				<input id="workConfirmButton" data-type="work" type="button" value="确认">
+				<input id="workCancelButton" type="button" value="撤销">
+			</div>
+			<ul id="workList" data-type="work" class="dis-none">
+			
+			</ul>
+		</li>
+		<li id="funItem" class="clearDefault common" onclick="console.log('click4')">
+			消遣商店
+			<span id="funAdd" class="add-icon">+</span>
+			<div id="funDiv" class="dis-none" onclick="DOMhelp.cancelClick(event);">
+				<input id="fun-item-name" type="text" placeholder="请输入消遣名称">
+				<span id="fun-checkName-span"></span><br>
+				<input id="fun-item-rank" type="text" placeholder="请输入消费星值">
+				<span id="fun-checkRank-span"></span><br>
+				<input id="funConfirmButton" data-type="fun" type="button" value="确认">
+				<input id="funCancelButton" type="button" value="撤销">
+			</div>
+			<ul id="funList" data-type="fun" class="dis-none" onclick="console.log('click6')">
+		
+			</ul>
+		</li>
+	</ul>
+	<div id="rank"><span id="current-rank-value"></span><input id="clear-total-value" type="button" value="清空"></div>
+</section>
+</body>
+<script type="text/javascript" src="docCookies.js"></script>
+<script type="text/javascript" src="DOMhelp.js"></script>
+<script type="text/javascript" src="DOMChange.js"></script>
+</html>

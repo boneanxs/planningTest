@@ -1,0 +1,38 @@
+ul,li,div,section{
+	margin: 0;
+	padding: 0;
+}
+#wrapper{
+	width: 70%;
+	margin: 0 auto;
+}
+.clearDefault{
+	list-style: none;
+}
+#list{
+	border: 2px solid black;
+}
+.common{
+	text-align: center;
+	line-height: 2em;
+	border: 2px solid black;
+	cursor: pointer;
+	overflow: hidden;
+}
+.dis-none{
+	display: none;
+}
+.add-icon{
+	float: right;
+	display: inline-block;
+	border: 2px solid black;
+	width: 33px;
+	height: 33px;
+	margin-right: 10px;
+	border-radius: 50%;
+	font-size: 25px;
+	font-weight: 900;
+}
+.add-icon:hover{
+	transform: rotate(45deg);
+}
